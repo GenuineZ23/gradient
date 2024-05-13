@@ -1,0 +1,86 @@
+body{
+    height: 55em;
+}
+
+body{
+    width: 90%;
+}
+
+.demo{
+    width: 100%;
+    height: 100%;
+}
+.light{
+    --lum: 80%;
+    background: rgb(127,78,127);
+    background: radial-gradient(circle, rgba(127,78,127,1) 0%, rgba(58,59,58,1) var(--lum));
+    animation: animateBg 3s linear infinite alternate;
+}
+@keyframes animateBg {
+    5%{
+        --lum: 81%;
+    }
+    10%{
+        --lum: 82%;
+    }
+    15%{
+        --lum: 83%;
+    }
+    20%{
+        --lum: 84%;
+    }
+    25%{
+        --lum: 85%;
+    }
+    30%{
+        --lum: 86%;
+    }
+    35%{
+        --lum: 87%;
+    }
+    40%{
+        --lum: 88%;
+    }
+    45%{
+        --lum: 89%;
+    }
+    50%{
+        --lum: 90%;
+    }
+    55%{
+        --lum: 91%;
+    }
+    60%{
+        --lum: 92%;
+    }
+    65%{
+        --lum: 93%;
+    }
+    70%{
+        --lum: 94%;
+    }
+    75%{
+        --lum: 95%;
+    }
+    80%{
+        --lum: 96%;
+    }
+    85%{
+        --lum: 97%;
+    }
+    90%{
+        --lum: 98%;
+    }
+    95%{
+        --lum: 99%;
+    }
+    100%{
+        --lum: 100%;
+    }
+}
+
+@property --lum {
+    syntax: "<percentage>";
+    initial-value: 80%;
+    inherits: true;
+}
